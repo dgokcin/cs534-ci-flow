@@ -10,7 +10,6 @@ pipeline {
         stage('Tests') {
             steps {
                 echo "Tests"
-                }
             }
         }
         stage('Static Code Analysis') {
