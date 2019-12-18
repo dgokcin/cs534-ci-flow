@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Tests') {
             steps {
-                sh "coverage run tests/test_suite.py"
+                sh "python coverage run tests/test_suite.py"
                 echo "Tests"
             }
         }
