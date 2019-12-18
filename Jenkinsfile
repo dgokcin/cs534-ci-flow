@@ -4,7 +4,7 @@ pipeline {
         stage('Tests') {
             steps {
                 sh "which python"
-                sh "which coverage"
+                sh "which pip"
                 //sh "python coverage run tests/test_suite.py"
             }
         }
