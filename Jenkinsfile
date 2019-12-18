@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('Tests') {
             steps {
-                sh "python coverage run tests/test_suite.py"
-                echo "Tests"
+                sh "which python"
+                sh "which coverage"
+                //sh "python coverage run tests/test_suite.py"
             }
         }
 
