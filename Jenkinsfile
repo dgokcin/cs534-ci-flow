@@ -9,8 +9,7 @@ pipeline {
 
         stage('Tests') {
             steps {
-                sh "which python"
-                sh "which pip"
+                sh "coverage tun tests/test_suite.py"
             }
         }
 
