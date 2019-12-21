@@ -9,7 +9,7 @@ pipeline {
 
         stage('Tests') {
             steps {
-                sh "coverage tun tests/test_suite.py"
+                sh "coverage run tests/test_suite.py"
             }
         }
 
