@@ -1,11 +1,16 @@
 pipeline {
-    agent {docker { image 'python:3.7.2' }}
+    agent any
     stages {
+        stage('Install Requirements') {
+            steps {
+                sh "pip install -r requirements.txt"
+            }
+        }
+
         stage('Tests') {
             steps {
                 sh "which python"
                 sh "which pip"
-                //sh "python coverage run tests/test_suite.py"
             }
         }
 
