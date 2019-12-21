@@ -24,7 +24,8 @@ pipeline {
                 echo 'This runs only on success'
             }
             failure { 
-                echo 'This runs only on failure'
+                echo 'This block runs only on failure'
+                echo 'Sending the build log to the developer who has broke the build is a common practice.'
             }
         }
 }
