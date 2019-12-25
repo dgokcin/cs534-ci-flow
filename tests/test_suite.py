@@ -7,7 +7,7 @@ class Testing(unittest.TestCase):
         self.assertEqual(a, b)
 
     def test_boolean(self):
-        a = False
+        a = True
         b = True
         self.assertEqual(a, b)
 
